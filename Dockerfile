@@ -73,7 +73,7 @@ RUN echo 'Installing Nginx Modules' && \
     apk del general-dependencies
 
 
-FROM nginx:${NGINX_VER}-alpine as production
+FROM nginx:1.25.1-alpine as production
 
 LABEL maintainer="Andrew Kimball"
 
