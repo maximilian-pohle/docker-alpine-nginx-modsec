@@ -1,4 +1,9 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "prHourlyLimit": 10,
+  "extends": [
+    "config:base"
+  ],
   "regexManagers": [
     {
       "fileMatch": ["^Dockerfile$"],
