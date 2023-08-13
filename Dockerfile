@@ -1,6 +1,4 @@
-ARG NGINX_VER=1.23.3
-
-FROM nginx:${NGINX_VER}-alpine as base
+FROM nginx:1.23.3-alpine as base
 
 ENV GEO_DB_RELEASE=2023-08
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
