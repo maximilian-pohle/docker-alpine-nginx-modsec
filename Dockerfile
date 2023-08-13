@@ -3,6 +3,7 @@ FROM nginx:1.25.1-alpine as base
 ENV GEO_DB_RELEASE=2023-08
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
 ENV MODSEC_VERSION=v3.0.8
+ # renovate: datasource=github-releases depName=coreruleset/coreruleset
 ENV OWASP_VERSION=v3.3.4
 
 WORKDIR /opt
