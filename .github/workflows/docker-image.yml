@@ -40,6 +40,12 @@ jobs:
           images: |
             maximilianpohle/docker-alpine-nginx-modsec
             ghcr.io/${{ github.repository }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha
 
       - name: Build and push Docker images
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
