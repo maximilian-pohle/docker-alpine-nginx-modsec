@@ -1,0 +1,1335 @@
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /home/mapo/git/github/docker-alpine-nginx-modsec/config.js
+DEBUG: No config file found on disk - skipping
+DEBUG: File config
+       "config": {}
+DEBUG: CLI config
+       "config": {
+         "repositories": ["maximilianpohle/docker-alpine-nginx-modsec"],
+         "schedule": [],
+         "token": "***********"
+       }
+DEBUG: Env config
+       "config": {"hostRules": []}
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "repositories": ["maximilianpohle/docker-alpine-nginx-modsec"],
+         "schedule": [],
+         "token": "***********"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Found valid git version: 2.34.1
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=283)
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "maximilianpohle", "name": "Maximilian Pohle"},
+         "userEmail": null
+       },
+       "renovateUsername": "maximilianpohle"
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+ INFO: Repository started (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "renovateVersion": "36.42.4"
+DEBUG: Using localDir: /tmp/renovate/repos/github/maximilianpohle/docker-alpine-nginx-modsec (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: initRepo("maximilianpohle/docker-alpine-nginx-modsec") (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: maximilianpohle/docker-alpine-nginx-modsec default branch = main (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using personal access token for git init (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Resetting npmrc (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Resetting npmrc (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: checkOnboarding() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: isOnboarded() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrList success (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "pullsTotal": 3,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: findFile(renovate.json) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Initializing git repository into /tmp/renovate/repos/github/maximilianpohle/docker-alpine-nginx-modsec (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Performing blobless clone (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: git clone completed (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "durationMs": 1677
+DEBUG: latest repository commit (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "latestCommit": {
+         "hash": "17f9d39844c01f88c17a4041c08550ca05cfdef1",
+         "date": "2023-08-13T13:43:03+02:00",
+         "message": "Merge branch 'main' of github.com:maximilianpohle/docker-alpine-nginx-modsec",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Maximilian Pohle",
+         "author_email": "mpohle39@outlook.com"
+       }
+DEBUG: Config file exists, fileName: renovate.json (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Retrieving issueList (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Retrieved 0 issues (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Repo is onboarded (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found renovate.json config file (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Repository config (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "fileName": "renovate.json",
+       "config": {
+         "regexManagers": [
+           {
+             "fileMatch": ["^Dockerfile$"],
+             "matchStrings": [
+               "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
+             ],
+             "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+           }
+         ]
+       }
+DEBUG: migrateAndValidate() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: No config migration necessary (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found repo ignorePaths (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts found (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: No vulnerability alerts found (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: No baseBranches (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: extract() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.ya?ml$ for manager batect (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)MODULE\.bazel$ for manager bazel-module (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.bazelversion$ for manager bazelisk (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.bicep$ for manager bicep (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.cake$ for manager cake (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.circleci/config\.ya?ml$ for manager circleci (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)cpanfile$ for manager cpanfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/|\.)([Dd]ocker|[Cc]ontainer)file$ for manager dockerfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$ for manager dockerfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)flux-system/(?:.+/)?gotk-components\.ya?ml$ for manager flux (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.fvm/fvm_config\.json$ for manager fvm (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^(workflow-templates|\.github/workflows)/[^/]+\.ya?ml$ for manager github-actions (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)action\.ya?ml$ for manager github-actions (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci-include (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)gradle\.properties$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)gradle/.+\.toml$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)buildSrc/.+\.kt$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)versions.props$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)versions.lock$ for manager gradle (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager helm-requirements (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)values\.ya?ml$ for manager helm-values (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)helmfile\.ya?ml$ for manager helmfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Chart\.ya?ml$ for manager helmv3 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.html?$ for manager html (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|\/).mvn/wrapper/maven-wrapper.properties$ for manager maven-wrapper (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Mintfile$ for manager mint (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)flake\.nix$ for manager nix (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)dotnet-tools\.json$ for manager nuget (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)global\.json$ for manager nuget (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)src/main/features/.+\.json$ for manager osgi (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager pep621 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)[\w-]*requirements(-\w+)?\.(txt|pip)$ for manager pip_requirements (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.ya?ml$ for manager pre-commit (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Puppetfile$ for manager puppet (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^Dockerfile$ for manager regex (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: project/[^/]*\.scala$ for manager sbt (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: project/build\.properties$ for manager sbt (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: \.tflint\.hcl$ for manager tflint-plugin (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^\.travis\.ya?ml$ for manager travis (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Using file match: ^\.woodpecker(?:/[^/]+)?\.ya?ml$ for manager woodpecker (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 1 file(s) for manager docker-compose: docker-compose.yml (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 1 file(s) for manager dockerfile: Dockerfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 2 file(s) for manager github-actions: .github/workflows/docker-image.yml, .github/workflows/semantic-release.yml (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 1 file(s) for manager gitlabci: .gitlab-ci.yml (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 1 file(s) for manager gitlabci-include: .gitlab-ci.yml (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 5 file(s) for manager html: errors/403.html, errors/404.html, errors/410.html, errors/5xx.html, errors/maintenance.html (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Matched 1 file(s) for manager regex: Dockerfile (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: docker-compose.extractPackageFile(docker-compose.yml) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found a multistage build stage name: base (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found a multistage build stage name: production (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Skipping alias COPY --from (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "image": "base"
+DEBUG: Skipping alias COPY --from (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "image": "base"
+DEBUG: Skipping alias COPY --from (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "image": "base"
+DEBUG: Skipping alias COPY --from (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "image": "base"
+DEBUG: manager extract durations (ms) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "managers": {
+         "docker-compose": 7,
+         "dockerfile": 11,
+         "gitlabci": 16,
+         "gitlabci-include": 18,
+         "regex": 22,
+         "github-actions": 24,
+         "html": 25
+       }
+DEBUG: Found docker-compose package files (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found dockerfile package files (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found github-actions package files (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found regex package files (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found 5 package file(s) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+ INFO: Dependency extraction complete (repository=maximilianpohle/docker-alpine-nginx-modsec, baseBranch=main)
+       "stats": {
+         "managers": {
+           "docker-compose": {"fileCount": 1, "depCount": 2},
+           "dockerfile": {"fileCount": 1, "depCount": 2},
+           "github-actions": {"fileCount": 2, "depCount": 9},
+           "regex": {"fileCount": 1, "depCount": 2}
+         },
+         "total": {"fileCount": 5, "depCount": 15}
+       }
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=maximilianpohle/docker-alpine-nginx-modsec, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=maximilianpohle/docker-alpine-nginx-modsec, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: detectSemanticCommits() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getCommitMessages (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: semanticCommits: detected "angular" (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: semanticCommits: enabled (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: 6 flattened updates found: docker/setup-qemu-action, docker/setup-buildx-action, docker/login-action, docker/build-push-action, aquasecurity/trivy-action, coreruleset/coreruleset (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Returning 6 branch(es) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: config.repoIsOnboarded=true (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: packageFiles with updates (repository=maximilianpohle/docker-alpine-nginx-modsec, baseBranch=main)
+       "config": {
+         "docker-compose": [
+           {
+             "deps": [
+               {
+                 "depName": "andrewnk/alpine-nginx-modsec",
+                 "replaceString": "andrewnk/alpine-nginx-modsec",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "updates": [],
+                 "packageName": "andrewnk/alpine-nginx-modsec",
+                 "versioning": "docker",
+                 "warnings": [],
+                 "skipReason": "invalid-value"
+               },
+               {
+                 "depName": "andrewnk/base-alpine-php",
+                 "replaceString": "andrewnk/base-alpine-php",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "updates": [],
+                 "packageName": "andrewnk/base-alpine-php",
+                 "versioning": "docker",
+                 "warnings": [],
+                 "skipReason": "invalid-value"
+               }
+             ],
+             "packageFile": "docker-compose.yml"
+           }
+         ],
+         "dockerfile": [
+           {
+             "deps": [
+               {
+                 "depName": "nginx",
+                 "currentValue": "1.25.1-alpine",
+                 "replaceString": "nginx:1.25.1-alpine",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "depType": "stage",
+                 "updates": [],
+                 "packageName": "nginx",
+                 "versioning": "docker",
+                 "warnings": [],
+                 "registryUrl": "https://index.docker.io",
+                 "currentVersion": "1.25.1",
+                 "fixedVersion": "1.25.1-alpine"
+               },
+               {
+                 "skipReason": "invalid-name",
+                 "replaceString": "nginx:${NGINX_VER}-alpine",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "depType": "final",
+                 "updates": []
+               }
+             ],
+             "packageFile": "Dockerfile"
+           }
+         ],
+         "github-actions": [
+           {
+             "deps": [
+               {
+                 "depName": "docker/setup-qemu-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "docker/setup-qemu-action@v1",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v1",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "v2",
+                     "newValue": "v2",
+                     "releaseTimestamp": "2023-06-07T14:33:11.000Z",
+                     "newMajor": 2,
+                     "newMinor": null,
+                     "updateType": "major",
+                     "branchName": "renovate/docker-setup-qemu-action-2.x"
+                   }
+                 ],
+                 "packageName": "docker/setup-qemu-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/docker/setup-qemu-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1"
+               },
+               {
+                 "depName": "docker/setup-buildx-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "docker/setup-buildx-action@v1",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v1",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "v2",
+                     "newValue": "v2",
+                     "releaseTimestamp": "2023-07-12T12:31:49.000Z",
+                     "newMajor": 2,
+                     "newMinor": null,
+                     "updateType": "major",
+                     "branchName": "renovate/docker-setup-buildx-action-2.x"
+                   }
+                 ],
+                 "packageName": "docker/setup-buildx-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/docker/setup-buildx-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1"
+               },
+               {
+                 "depName": "docker/login-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "docker/login-action@v1",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v1",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "v2",
+                     "newValue": "v2",
+                     "releaseTimestamp": "2023-06-07T12:53:41.000Z",
+                     "newMajor": 2,
+                     "newMinor": null,
+                     "updateType": "major",
+                     "branchName": "renovate/docker-login-action-2.x"
+                   }
+                 ],
+                 "packageName": "docker/login-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/docker/login-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1"
+               },
+               {
+                 "depName": "docker/build-push-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "docker/build-push-action@v2",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v2",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "v4",
+                     "newValue": "v4",
+                     "releaseTimestamp": "2023-06-13T09:24:40.000Z",
+                     "newMajor": 4,
+                     "newMinor": null,
+                     "updateType": "major",
+                     "branchName": "renovate/docker-build-push-action-4.x"
+                   }
+                 ],
+                 "packageName": "docker/build-push-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/docker/build-push-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v2",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v2"
+               },
+               {
+                 "depName": "aquasecurity/trivy-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "aquasecurity/trivy-action@7b7aa264d83dc58691451798b4d117d53d21edfe",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentDigest": "7b7aa264d83dc58691451798b4d117d53d21edfe",
+                 "updates": [
+                   {
+                     "updateType": "digest",
+                     "newDigest": "559eb1224e654a86c844a795e6702a0742c60c72",
+                     "branchName": "renovate/aquasecurity-trivy-action-digest"
+                   }
+                 ],
+                 "packageName": "aquasecurity/trivy-action",
+                 "warnings": []
+               },
+               {
+                 "depName": "github/codeql-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "github/codeql-action/upload-sarif@v2",
+                 "autoReplaceStringTemplate": "{{depName}}/upload-sarif@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v2",
+                 "updates": [],
+                 "packageName": "github/codeql-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/github/codeql-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v2",
+                 "fixedVersion": "v2"
+               },
+               {
+                 "depName": "ubuntu",
+                 "currentValue": "latest",
+                 "replaceString": "ubuntu-latest",
+                 "depType": "github-runner",
+                 "datasource": "github-runners",
+                 "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+                 "skipReason": "invalid-version",
+                 "updates": [],
+                 "packageName": "ubuntu"
+               }
+             ],
+             "packageFile": ".github/workflows/docker-image.yml"
+           },
+           {
+             "deps": [
+               {
+                 "depName": "actions/checkout",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "actions/checkout@v3",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v3",
+                 "updates": [],
+                 "packageName": "actions/checkout",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/actions/checkout",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3",
+                 "fixedVersion": "v3"
+               },
+               {
+                 "depName": "ubuntu",
+                 "currentValue": "latest",
+                 "replaceString": "ubuntu-latest",
+                 "depType": "github-runner",
+                 "datasource": "github-runners",
+                 "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+                 "skipReason": "invalid-version",
+                 "updates": [],
+                 "packageName": "ubuntu"
+               }
+             ],
+             "packageFile": ".github/workflows/semantic-release.yml"
+           }
+         ],
+         "regex": [
+           {
+             "deps": [
+               {
+                 "depName": "SpiderLabs/ModSecurity",
+                 "currentValue": "v3.0.10",
+                 "datasource": "github-releases",
+                 "versioning": "semver",
+                 "replaceString": "datasource=github-releases depName=SpiderLabs/ModSecurity\nENV MODSEC_VERSION=v3.0.10\n",
+                 "updates": [],
+                 "packageName": "SpiderLabs/ModSecurity",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/SpiderLabs/ModSecurity",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3.0.10",
+                 "fixedVersion": "v3.0.10"
+               },
+               {
+                 "depName": "coreruleset/coreruleset",
+                 "currentValue": "v3.3.4",
+                 "datasource": "github-releases",
+                 "versioning": "semver",
+                 "replaceString": "datasource=github-releases depName=coreruleset/coreruleset\nENV OWASP_VERSION=v3.3.4\n",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "v3.3.5",
+                     "newValue": "v3.3.5",
+                     "releaseTimestamp": "2023-07-23T14:19:58.000Z",
+                     "newMajor": 3,
+                     "newMinor": 3,
+                     "updateType": "patch",
+                     "branchName": "renovate/coreruleset-coreruleset-3.x"
+                   }
+                 ],
+                 "packageName": "coreruleset/coreruleset",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/coreruleset/coreruleset",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3.3.4",
+                 "isSingleVersion": true,
+                 "fixedVersion": "v3.3.4"
+               }
+             ],
+             "matchStrings": [
+               "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
+             ],
+             "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+             "packageFile": "Dockerfile"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: semanticCommits: returning "enabled" from cache (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: processRepo() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Processing 6 branches: renovate/aquasecurity-trivy-action-digest, renovate/coreruleset-coreruleset-3.x, renovate/docker-build-push-action-4.x, renovate/docker-login-action-2.x, renovate/docker-setup-buildx-action-2.x, renovate/docker-setup-qemu-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculating hourly PRs remaining (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: currentHourStart=2023-08-13T14:00:00.000+02:00 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PR hourly limit remaining: 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculating prConcurrentLimit (10) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/aquasecurity-trivy-action-digest) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/aquasecurity-trivy-action-digest, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/aquasecurity-trivy-action-digest, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/coreruleset-coreruleset-3.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/docker-build-push-action-4.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-build-push-action-4.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-build-push-action-4.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/docker-login-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-login-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-login-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/docker-setup-buildx-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-setup-buildx-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-setup-buildx-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/docker-setup-qemu-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-setup-qemu-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/docker-setup-qemu-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: 0 PRs are currently open (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PR concurrent limit remaining: 10 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculated maximum PRs remaining this run: 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PullRequests limit = 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculating hourly PRs remaining (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: currentHourStart=2023-08-13T14:00:00.000+02:00 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PR hourly limit remaining: 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculating branchConcurrentLimit (10) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: 0 already existing branches found:  (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Branch concurrent limit remaining: 10 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Calculated maximum branches remaining this run: 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Branches limit = 2 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: getBranchPr(renovate/aquasecurity-trivy-action-digest) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: findPr(renovate/aquasecurity-trivy-action-digest, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: findPr(renovate/aquasecurity-trivy-action-digest, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: findPr(renovate/aquasecurity-trivy-action-digest, chore(deps): update aquasecurity/trivy-action digest to 559eb12, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Starting search at index 1084 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/aquasecurity-trivy-action-digest)
+       "depName": "aquasecurity/trivy-action"
+DEBUG: Found match at index 1084 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/aquasecurity-trivy-action-digest)
+       "depName": "aquasecurity/trivy-action"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/aquasecurity-trivy-action-digest)
+       "depName": "aquasecurity/trivy-action"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Preparing files for committing to branch renovate/aquasecurity-trivy-action-digest (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Setting git author name: Renovate Bot (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Setting git author email: renovate@whitesourcesoftware.com (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/aquasecurity-trivy-action-digest",
+         "commit": "8b830f166b141f7e472e4a63a9811fb2b926c5e2",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/aquasecurity-trivy-action-digest:renovate/aquasecurity-trivy-action-digest (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Git function thrown (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/aquasecurity-trivy-action-digest:renovate/aquasecurity-trivy-action-digest",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/aquasecurity-trivy-action-digest:refs/heads/renovate/aquasecurity-trivy-action-digest\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (752 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/aquasecurity-trivy-action-digest:refs/heads/renovate/aquasecurity-trivy-action-digest\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (752 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+DEBUG: commitFiles error (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/aquasecurity-trivy-action-digest:renovate/aquasecurity-trivy-action-digest",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/aquasecurity-trivy-action-digest:refs/heads/renovate/aquasecurity-trivy-action-digest\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (752 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/aquasecurity-trivy-action-digest:refs/heads/renovate/aquasecurity-trivy-action-digest\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (752 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+ INFO: Workflows update rejection - aborting branch. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/aquasecurity-trivy-action-digest)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: getBranchPr(renovate/coreruleset-coreruleset-3.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, chore(deps): update dependency coreruleset/coreruleset to v3.3.5, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Starting search at index 172 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=Dockerfile, branch=renovate/coreruleset-coreruleset-3.x)
+       "depName": "coreruleset/coreruleset"
+DEBUG: Found match at index 172 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=Dockerfile, branch=renovate/coreruleset-coreruleset-3.x)
+       "depName": "coreruleset/coreruleset"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=Dockerfile, branch=renovate/coreruleset-coreruleset-3.x)
+       "depName": "coreruleset/coreruleset"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Preparing files for committing to branch renovate/coreruleset-coreruleset-3.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/coreruleset-coreruleset-3.x",
+         "commit": "6d5f4becade9f4fe7feac05d83710058fcd8d6ec",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/coreruleset-coreruleset-3.x:renovate/coreruleset-coreruleset-3.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: git push (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/coreruleset-coreruleset-3.x",
+             "remote": "refs/heads/renovate/coreruleset-coreruleset-3.x"
+           }
+         ],
+         "branch": {
+           "local": "renovate/coreruleset-coreruleset-3.x",
+           "remote": "renovate/coreruleset-coreruleset-3.x",
+           "remoteName": "origin"
+         },
+         "ref": {"local": "refs/remotes/origin/renovate/coreruleset-coreruleset-3.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/coreruleset-coreruleset-3.x' on GitHub by visiting:",
+             "https://github.com/maximilianpohle/docker-alpine-nginx-modsec/pull/new/renovate/coreruleset-coreruleset-3.x"
+           ],
+           "pullRequestUrl": "https://github.com/maximilianpohle/docker-alpine-nginx-modsec/pull/new/renovate/coreruleset-coreruleset-3.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+ INFO: Branch created (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "commitSha": "6d5f4becade9f4fe7feac05d83710058fcd8d6ec"
+DEBUG: Ensuring PR (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: There are 0 errors and 0 warnings (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: getBranchPr(renovate/coreruleset-coreruleset-3.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Fetching changelog: https://github.com/coreruleset/coreruleset (v3.3.4 -> v3.3.5) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Creating PR (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "prTitle": "chore(deps): update dependency coreruleset/coreruleset to v3.3.5"
+DEBUG: Creating PR (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "title": "chore(deps): update dependency coreruleset/coreruleset to v3.3.5",
+       "head": "maximilianpohle:renovate/coreruleset-coreruleset-3.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "pr": 5,
+       "draft": false
+DEBUG: Adding labels '' to #5 (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+ INFO: PR created (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+       "pr": 5,
+       "prTitle": "chore(deps): update dependency coreruleset/coreruleset to v3.3.5"
+DEBUG: addParticipants(pr=5) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: setPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: Created Pull Request #5 (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: PR is not configured for automerge (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: setBranchCommit() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/coreruleset-coreruleset-3.x)
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: getBranchPr(renovate/docker-build-push-action-4.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: findPr(renovate/docker-build-push-action-4.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: findPr(renovate/docker-build-push-action-4.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: findPr(renovate/docker-build-push-action-4.x, chore(deps): update docker/build-push-action action to v4, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Starting search at index 629 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-build-push-action-4.x)
+       "depName": "docker/build-push-action"
+DEBUG: Found match at index 629 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-build-push-action-4.x)
+       "depName": "docker/build-push-action"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-build-push-action-4.x)
+       "depName": "docker/build-push-action"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Preparing files for committing to branch renovate/docker-build-push-action-4.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/docker-build-push-action-4.x",
+         "commit": "420b189383ebc053d88f560563c475b00c74b8cd",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/docker-build-push-action-4.x:renovate/docker-build-push-action-4.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Git function thrown (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-build-push-action-4.x:renovate/docker-build-push-action-4.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-build-push-action-4.x:refs/heads/renovate/docker-build-push-action-4.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (696 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-build-push-action-4.x:refs/heads/renovate/docker-build-push-action-4.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (696 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+DEBUG: commitFiles error (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-build-push-action-4.x:renovate/docker-build-push-action-4.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-build-push-action-4.x:refs/heads/renovate/docker-build-push-action-4.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (696 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-build-push-action-4.x:refs/heads/renovate/docker-build-push-action-4.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (696 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+ INFO: Workflows update rejection - aborting branch. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-build-push-action-4.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: getBranchPr(renovate/docker-login-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: findPr(renovate/docker-login-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: findPr(renovate/docker-login-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: findPr(renovate/docker-login-action-2.x, chore(deps): update docker/login-action action to v2, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Starting search at index 419 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-login-action-2.x)
+       "depName": "docker/login-action"
+DEBUG: Found match at index 419 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-login-action-2.x)
+       "depName": "docker/login-action"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-login-action-2.x)
+       "depName": "docker/login-action"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Preparing files for committing to branch renovate/docker-login-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/docker-login-action-2.x",
+         "commit": "2dc50668816b0f90706b437faf6ac06654d247c8",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/docker-login-action-2.x:renovate/docker-login-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Git function thrown (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-login-action-2.x:renovate/docker-login-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-login-action-2.x:refs/heads/renovate/docker-login-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (690 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-login-action-2.x:refs/heads/renovate/docker-login-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (690 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)"
+       }
+DEBUG: commitFiles error (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-login-action-2.x:renovate/docker-login-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-login-action-2.x:refs/heads/renovate/docker-login-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (690 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-login-action-2.x:refs/heads/renovate/docker-login-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (690 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)"
+       }
+ INFO: Workflows update rejection - aborting branch. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-login-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: getBranchPr(renovate/docker-setup-buildx-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: findPr(renovate/docker-setup-buildx-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: findPr(renovate/docker-setup-buildx-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: findPr(renovate/docker-setup-buildx-action-2.x, chore(deps): update docker/setup-buildx-action action to v2, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Starting search at index 248 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-buildx-action-2.x)
+       "depName": "docker/setup-buildx-action"
+DEBUG: Found match at index 248 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-buildx-action-2.x)
+       "depName": "docker/setup-buildx-action"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-buildx-action-2.x)
+       "depName": "docker/setup-buildx-action"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Preparing files for committing to branch renovate/docker-setup-buildx-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/docker-setup-buildx-action-2.x",
+         "commit": "d9044c1f864648de7c84cb1b41caf4bbc5da4064",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/docker-setup-buildx-action-2.x:renovate/docker-setup-buildx-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Git function thrown (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-setup-buildx-action-2.x:renovate/docker-setup-buildx-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-buildx-action-2.x:refs/heads/renovate/docker-setup-buildx-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (701 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-buildx-action-2.x:refs/heads/renovate/docker-setup-buildx-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (701 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+DEBUG: commitFiles error (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-setup-buildx-action-2.x:renovate/docker-setup-buildx-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-buildx-action-2.x:refs/heads/renovate/docker-setup-buildx-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (701 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-buildx-action-2.x:refs/heads/renovate/docker-setup-buildx-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (701 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+ INFO: Workflows update rejection - aborting branch. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-buildx-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: syncBranchState() (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: getBranchPr(renovate/docker-setup-qemu-action-2.x) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: findPr(renovate/docker-setup-qemu-action-2.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: findPr(renovate/docker-setup-qemu-action-2.x, undefined, closed) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: branchExists=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: findPr(renovate/docker-setup-qemu-action-2.x, chore(deps): update docker/setup-qemu-action action to v2, !open) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: prAlreadyExisted=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Checking schedule(, null) (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: No schedule defined (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Branch needs creating (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Starting search at index 171 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-qemu-action-2.x)
+       "depName": "docker/setup-qemu-action"
+DEBUG: Found match at index 171 (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-qemu-action-2.x)
+       "depName": "docker/setup-qemu-action"
+DEBUG: Contents updated (repository=maximilianpohle/docker-alpine-nginx-modsec, packageFile=.github/workflows/docker-image.yml, branch=renovate/docker-setup-qemu-action-2.x)
+       "depName": "docker/setup-qemu-action"
+DEBUG: Updated 1 package files (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: No updated lock files in branch (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: 1 file(s) to commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Preparing files for committing to branch renovate/docker-setup-qemu-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: git commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/docker-setup-qemu-action-2.x",
+         "commit": "47fe2a178cc67ab062c5c49a43b7779972072e61",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/docker-setup-qemu-action-2.x:renovate/docker-setup-qemu-action-2.x (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Git function thrown (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-setup-qemu-action-2.x:renovate/docker-setup-qemu-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-qemu-action-2.x:refs/heads/renovate/docker-setup-qemu-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (693 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-qemu-action-2.x:refs/heads/renovate/docker-setup-qemu-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (693 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+DEBUG: commitFiles error (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+       "err": {
+         "task": {
+           "commands": [
+             "push",
+             "origin",
+             "renovate/docker-setup-qemu-action-2.x:renovate/docker-setup-qemu-action-2.x",
+             "--force-with-lease",
+             "-u",
+             "--no-verify",
+             "--verbose",
+             "--porcelain"
+           ],
+           "format": "utf-8",
+           "parser": "[function]"
+         },
+         "message": "To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-qemu-action-2.x:refs/heads/renovate/docker-setup-qemu-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (693 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n",
+         "stack": "Error: To https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\n!\trefs/heads/renovate/docker-setup-qemu-action-2.x:refs/heads/renovate/docker-setup-qemu-action-2.x\t[remote rejected] (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/docker-image.yml` without `workflow` scope)\nDone\nPushing to https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git\nPOST git-receive-pack (693 bytes)\nerror: failed to push some refs to 'https://github.com/maximilianpohle/docker-alpine-nginx-modsec.git'\n\n    at Object.action (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/plugins/plugin-store.ts:29:29)\n    at /home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:127:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:14)\n    at GitExecutorChain.<anonymous> (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:100:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/mapo/.npm/_npx/05eeecd92f4e18e0/node_modules/simple-git/dist/cjs/index.js:55:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+       }
+ INFO: Workflows update rejection - aborting branch. (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: Setting current branch to main (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+DEBUG: latest commit (repository=maximilianpohle/docker-alpine-nginx-modsec, branch=renovate/docker-setup-qemu-action-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-13T13:43:03+02:00"
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getBranchPr(renovate/coreruleset-coreruleset-3.x) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: findPr(renovate/coreruleset-coreruleset-3.x, undefined, open) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Found PR #5 (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: getPrCache() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: ensureDependencyDashboard() (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Closing Dependency Dashboard (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Removing any stale branches (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: config.repoIsOnboarded=true (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Branch lists (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "branchList": [
+         "renovate/aquasecurity-trivy-action-digest",
+         "renovate/coreruleset-coreruleset-3.x",
+         "renovate/docker-build-push-action-4.x",
+         "renovate/docker-login-action-2.x",
+         "renovate/docker-setup-buildx-action-2.x",
+         "renovate/docker-setup-qemu-action-2.x"
+       ],
+       "renovateBranches": ["renovate/coreruleset-coreruleset-3.x"]
+DEBUG: remainingBranches= (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: No branches to clean up (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Repo is activated (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Branch summary (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "17f9d39844c01f88c17a4041c08550ca05cfdef1"}],
+       "branches": [
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "17f9d39844c01f88c17a4041c08550ca05cfdef1",
+           "branchName": "renovate/coreruleset-coreruleset-3.x",
+           "branchSha": "6d5f4becade9f4fe7feac05d83710058fcd8d6ec",
+           "isModified": false,
+           "isPristine": true
+         }
+       ],
+       "defaultBranch": "main",
+       "inactiveBranches": [
+         "renovate/aquasecurity-trivy-action-digest",
+         "renovate/docker-build-push-action-4.x",
+         "renovate/docker-login-action-2.x",
+         "renovate/docker-setup-buildx-action-2.x",
+         "renovate/docker-setup-qemu-action-2.x"
+       ]
+DEBUG: branches info extended (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "branchesInformation": [
+         {
+           "branchName": "renovate/aquasecurity-trivy-action-digest",
+           "prNo": null,
+           "prTitle": "chore(deps): update aquasecurity/trivy-action digest to 559eb12",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "github-tags",
+               "depName": "aquasecurity/trivy-action",
+               "displayPending": "",
+               "packageFile": ".github/workflows/docker-image.yml",
+               "updateType": "digest",
+               "packageName": "aquasecurity/trivy-action"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/coreruleset-coreruleset-3.x",
+           "prNo": 5,
+           "prTitle": "chore(deps): update dependency coreruleset/coreruleset to v3.3.5",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "github-releases",
+               "depName": "coreruleset/coreruleset",
+               "displayPending": "",
+               "fixedVersion": "v3.3.4",
+               "currentVersion": "v3.3.4",
+               "currentValue": "v3.3.4",
+               "newValue": "v3.3.5",
+               "newVersion": "v3.3.5",
+               "packageFile": "Dockerfile",
+               "updateType": "patch",
+               "packageName": "coreruleset/coreruleset"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/docker-build-push-action-4.x",
+           "prNo": null,
+           "prTitle": "chore(deps): update docker/build-push-action action to v4",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "github-tags",
+               "depName": "docker/build-push-action",
+               "displayPending": "",
+               "fixedVersion": "v2",
+               "currentVersion": "v2",
+               "currentValue": "v2",
+               "newValue": "v4",
+               "newVersion": "v4",
+               "packageFile": ".github/workflows/docker-image.yml",
+               "updateType": "major",
+               "packageName": "docker/build-push-action"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/docker-login-action-2.x",
+           "prNo": null,
+           "prTitle": "chore(deps): update docker/login-action action to v2",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "github-tags",
+               "depName": "docker/login-action",
+               "displayPending": "",
+               "fixedVersion": "v1",
+               "currentVersion": "v1",
+               "currentValue": "v1",
+               "newValue": "v2",
+               "newVersion": "v2",
+               "packageFile": ".github/workflows/docker-image.yml",
+               "updateType": "major",
+               "packageName": "docker/login-action"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/docker-setup-buildx-action-2.x",
+           "prNo": null,
+           "prTitle": "chore(deps): update docker/setup-buildx-action action to v2",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "github-tags",
+               "depName": "docker/setup-buildx-action",
+               "displayPending": "",
+               "fixedVersion": "v1",
+               "currentVersion": "v1",
+               "currentValue": "v1",
+               "newValue": "v2",
+               "newVersion": "v2",
+               "packageFile": ".github/workflows/docker-image.yml",
+               "updateType": "major",
+               "packageName": "docker/setup-buildx-action"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/docker-setup-qemu-action-2.x",
+           "prNo": null,
+           "prTitle": "chore(deps): update docker/setup-qemu-action action to v2",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "github-tags",
+               "depName": "docker/setup-qemu-action",
+               "displayPending": "",
+               "fixedVersion": "v1",
+               "currentVersion": "v1",
+               "currentValue": "v1",
+               "newValue": "v2",
+               "newVersion": "v2",
+               "packageFile": ".github/workflows/docker-image.yml",
+               "updateType": "major",
+               "packageName": "docker/setup-qemu-action"
+             }
+           ]
+         }
+       ]
+DEBUG: Renovate repository PR statistics (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "stats": {"total": 4, "open": 1, "closed": 0, "merged": 3}
+DEBUG: Repository result: done, status: activated, enabled: true, onboarded: true (repository=maximilianpohle/docker-alpine-nginx-modsec)
+DEBUG: Repository timing splits (milliseconds) (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "splits": {"init": 3843, "extract": 238, "lookup": 3269, "onboarding": 1, "update": 10708},
+       "total": 18094
+DEBUG: Package cache statistics (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "get": {"count": 19, "avgMs": 2, "medianMs": 0, "maxMs": 30},
+       "set": {"count": 2, "avgMs": 9, "medianMs": 8, "maxMs": 9}
+DEBUG: http statistics (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "urls": {
+         "https://api.github.com/graphql (POST,200)": 19,
+         "https://api.github.com/repos/aquasecurity/trivy-action/commits (GET,200)": 1,
+         "https://api.github.com/repos/coreruleset/coreruleset (GET,200)": 1,
+         "https://api.github.com/repos/coreruleset/coreruleset/git/blobs/25dff5a7a34640cfcab8f0f6b29d230930815ebb (GET,200)": 1,
+         "https://api.github.com/repos/coreruleset/coreruleset/git/trees/v4.0/dev (GET,200)": 1,
+         "https://api.github.com/repos/maximilianpohle/docker-alpine-nginx-modsec/pulls (GET,200)": 1,
+         "https://api.github.com/repos/maximilianpohle/docker-alpine-nginx-modsec/pulls (POST,201)": 1
+       },
+       "hostStats": {"api.github.com": {"requestCount": 25, "requestAvgMs": 534, "queueAvgMs": 0}},
+       "totalRequests": 25
+DEBUG: Package lookup durations (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "docker": {"count": 3, "averageMs": 46, "totalMs": 138, "maximumMs": 110},
+       "github-tags": {"count": 7, "averageMs": 1217, "totalMs": 8520, "maximumMs": 2731},
+       "github-releases": {"count": 2, "averageMs": 550, "totalMs": 1099, "maximumMs": 623}
+DEBUG: dns cache (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "hosts": []
+ INFO: Repository finished (repository=maximilianpohle/docker-alpine-nginx-modsec)
+       "cloned": true,
+       "durationMs": 18094
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 8 file cached entries in 21ms
+DEBUG: Renovate exiting
