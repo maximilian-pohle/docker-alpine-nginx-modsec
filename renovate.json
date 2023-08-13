@@ -12,5 +12,8 @@
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
+  ],
+  "schedule": [
+    "before 4am"
   ]
 }
