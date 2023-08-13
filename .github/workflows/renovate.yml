@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: npx renovate
+    - run: npx renovate --token ${{ secrets.GITHUB_TOKEN }} --schedule="" maximilianpohle/docker-alpine-nginx-modsec
