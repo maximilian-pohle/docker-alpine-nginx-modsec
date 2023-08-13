@@ -4,7 +4,7 @@ ENV GEO_DB_RELEASE=2023-08
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
 ENV MODSEC_VERSION=v3.0.10
  # renovate: datasource=github-releases depName=coreruleset/coreruleset
-ENV OWASP_VERSION=v3.3.4
+ENV OWASP_VERSION=v3.3.5
 
 WORKDIR /opt
 
