@@ -6,7 +6,9 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^Dockerfile$"],
+      "fileMatch": [
+        "^Dockerfile$"
+      ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
       ],
@@ -14,8 +16,13 @@
     }
   ],
   "includeForks": true,
-  "baseBranches": ["test"],
+  "baseBranches": [
+    "test"
+  ],
   "schedule": [
     "at any time"
+  ],
+  "assignees": [
+    "maximilianpohle"
   ]
 }
