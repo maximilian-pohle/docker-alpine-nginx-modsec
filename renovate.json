@@ -15,5 +15,6 @@
   ],
   "schedule": [
     "before 4am"
-  ]
+  ],
+  "includeForks": true
 }
