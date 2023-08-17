@@ -1,4 +1,4 @@
-FROM nginx:1.25.1-alpine as base
+FROM nginx:1.25.2-alpine as base
 
 ENV GEO_DB_RELEASE=2023-08
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
@@ -73,7 +73,7 @@ RUN echo 'Installing Nginx Modules' && \
     apk del general-dependencies
 
 
-FROM nginx:1.25.1-alpine as production
+FROM nginx:1.25.2-alpine as production
 
 LABEL maintainer="Andrew Kimball"
 
