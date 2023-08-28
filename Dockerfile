@@ -1,11 +1,5 @@
 FROM nginx:1.25.2-alpine as base
 
-ENV GEO_DB_RELEASE=2023-08
- # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
-ENV MODSEC_VERSION=v3.0.10
- # renovate: datasource=github-releases depName=coreruleset/coreruleset
-ENV OWASP_VERSION=v3.3.5
-
 WORKDIR /opt
 
 # Install dependencies; includes dependencies required for compile-time options:
@@ -33,6 +27,12 @@ RUN echo "Installing Dependencies" && \
     pcre-dev \
     yajl-dev \
     zlib-dev
+
+ENV GEO_DB_RELEASE=2023-08
+ # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
+ENV MODSEC_VERSION=v3.0.10
+ # renovate: datasource=github-releases depName=coreruleset/coreruleset
+ENV OWASP_VERSION=v3.3.5
 
 # Clone and compile modsecurity. Binary will be located in /usr/local/modsecurity
 RUN echo "Installing ModSec Library" && \
@@ -77,6 +77,19 @@ FROM nginx:1.25.2-alpine as production
 
 LABEL maintainer="Andrew Kimball"
 
+RUN apk add --no-cache \
+    curl-dev \
+    libmaxminddb-dev \
+    libstdc++ \
+    libxml2-dev \
+    lmdb-dev \
+    pcre \
+    tzdata \
+    yajl && \
+    chown -R nginx:nginx /usr/share/nginx
+
+ENV MODSECURITY_SECRULEENGINE=DetectionOnly
+ENV MODSECURITY_SECAUDITLOGFORMAT=JSON
 # Copy nginx, owasp-modsecurity-crs, and modsecurity from the build image
 COPY --from=base /etc/nginx/ /etc/nginx/
 COPY --from=base /usr/local/modsecurity /usr/local/modsecurity
@@ -88,17 +101,8 @@ COPY errors /usr/share/nginx/errors
 COPY conf/nginx/ /etc/nginx/
 COPY conf/modsec/ /etc/nginx/modsec/
 COPY conf/owasp/ /usr/local/owasp-modsecurity-crs/
+COPY docker-entrypoint.d /docker-entrypoint.d
 
-RUN apk add --no-cache \
-    curl-dev \
-    libmaxminddb-dev \
-    libstdc++ \
-    libxml2-dev \
-    lmdb-dev \
-    pcre \
-    tzdata \
-    yajl && \
-    chown -R nginx:nginx /usr/share/nginx
 
 WORKDIR /usr/share/nginx/html
 

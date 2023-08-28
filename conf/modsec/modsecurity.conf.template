@@ -4,7 +4,7 @@
 # only to start with, because that minimises the chances of post-installation
 # disruption.
 #
-SecRuleEngine DetectionOnly
+SecRuleEngine $MODSECURITY_SECRULEENGINE
 
 
 # -- Request body handling ---------------------------------------------------
@@ -241,7 +241,7 @@ SecDataDir /tmp/
 #
 SecAuditEngine RelevantOnly
 SecAuditLogRelevantStatus "^(?:5|4(?!04))"
-SecAuditLogFormat JSON
+SecAuditLogFormat $MODSECURITY_SECAUDITLOGFORMAT
 
 # Log everything we know about a transaction.
 SecAuditLogParts ABIJDEFHZ
