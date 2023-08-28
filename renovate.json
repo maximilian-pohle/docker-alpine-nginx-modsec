@@ -16,9 +16,6 @@
     }
   ],
   "includeForks": true,
-  "baseBranches": [
-    "test"
-  ],
   "schedule": [
     "at any time"
   ],
