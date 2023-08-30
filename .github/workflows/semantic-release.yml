@@ -5,9 +5,10 @@ name: Semantic Release
 
 on:
   push:
-    branches: [ main,test ]
+    branches: [ test ]
   pull_request:
-    branches: [ main,test ]
+    branches: [ test ]
+  workflow_dispatch:
 
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
