@@ -21,4 +21,4 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GH_TOKEN }}
-        message: 'chore(deps): update geoip database to $(date +"%Y-%m")'
+        message: "chore(deps): update geoip database"
