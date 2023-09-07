@@ -1,0 +1,24 @@
+---
+name: GEOIP Update
+
+on:
+  schedule:
+    - cron: '30 12 1 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Refresh geoip database
+      run: |
+        sed -i "s/ENV GEO_DB_RELEASE=.*/ENV GEO_DB_RELEASE=$(date +"%Y-%m")/" Dockerfile
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        message: 'chore(deps): update geoip database to $(date +"%Y-%m")'
