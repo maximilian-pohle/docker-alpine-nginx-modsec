@@ -28,7 +28,7 @@ RUN echo "Installing Dependencies" && \
     yajl-dev \
     zlib-dev
 
-ENV GEO_DB_RELEASE=2023-09
+ENV GEO_DB_RELEASE=2023-10
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
 ENV MODSEC_VERSION=v3.0.10
  # renovate: datasource=github-releases depName=coreruleset/coreruleset
