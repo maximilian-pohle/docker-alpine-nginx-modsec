@@ -101,7 +101,7 @@ COPY errors /usr/share/nginx/errors
 COPY conf/nginx/ /etc/nginx/
 COPY conf/modsec/ /etc/nginx/modsec/
 COPY conf/owasp/ /usr/local/owasp-modsecurity-crs/
-COPY docker-entrypoint.d /docker-entrypoint.d
+COPY docker-entrypoint.d/ /docker-entrypoint.d
 
 
 WORKDIR /usr/share/nginx/html
