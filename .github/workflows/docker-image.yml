@@ -39,6 +39,7 @@ jobs:
             maximilianpohle/docker-alpine-nginx-modsec
             ghcr.io/${{ github.repository }}
           tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
@@ -59,7 +60,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@69cbbc0cbbf6a2b0bab8dcf0e9f2d7ead08e87e4
         with:
-          image-ref: maximilianpohle/docker-alpine-nginx-modsec:${{ env.BRANCH }}
+          image-ref: maximilianpohle/docker-alpine-nginx-modsec:${{ github.sha }}
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
