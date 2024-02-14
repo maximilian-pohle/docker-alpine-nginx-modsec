@@ -32,7 +32,7 @@ ENV GEO_DB_RELEASE=2023-11
  # renovate: datasource=github-releases depName=SpiderLabs/ModSecurity
 ENV MODSEC_VERSION=v3.0.10
  # renovate: datasource=github-releases depName=coreruleset/coreruleset
-ENV OWASP_VERSION=v3.3.5
+ENV OWASP_VERSION=v4.0.0
 
 # Clone and compile modsecurity. Binary will be located in /usr/local/modsecurity
 RUN echo "Installing ModSec Library" && \
