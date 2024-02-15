@@ -1,4 +1,4 @@
-FROM nginx:1.25.3-alpine as base
+FROM nginx:1.25.4-alpine as base
 
 WORKDIR /opt
 
@@ -73,7 +73,7 @@ RUN echo 'Installing Nginx Modules' && \
     apk del general-dependencies
 
 
-FROM nginx:1.25.3-alpine as production
+FROM nginx:1.25.4-alpine as production
 
 LABEL maintainer="Andrew Kimball"
 
