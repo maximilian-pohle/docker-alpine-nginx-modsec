@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Log in to the Container registry
-        uses: docker/login-action@1220aa36aaf257e736f1d64e3b87c4878665836f
+        uses: docker/login-action@5139682d94efc37792e6b54386b5b470a68a4737
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
